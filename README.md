@@ -26,3 +26,10 @@ test code from other exercises.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+The first set of nested for loops each iterates through each vertice in the graph, 
+making the complexity $|V^2|$.  The second set of nested for loops also iterates through
+each vertice in the graph, except this time there are three of them, making the complexity
+$|V^3|$.  
+
+$|V^2| + |V^3|$ reduces to $|V^3|$, making the worst-case time complexity $\Theta ( |V^3| )$.
